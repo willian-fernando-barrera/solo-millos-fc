@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Información de Encabezado y Enlace al CSS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado y Menú de Navegación -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Mi Tienda</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="Imagenes/menu.png.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Sección del Carrito de Compras -->
+        <ul>
+            <li class="submenu">
+                <img src="Imagenes/car.svg.png" id="img-carrito" alt="carrito">
+                <span id="contador-carrito" style="background-color: red; color: white; padding: 3px 6px; border-radius: 50%; position: absolute; top: 10px; right: 10px;">0</span>
+                
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p id="total-carrito">Total: $0</p>
+                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                    <button id="checkout-btn">Finalizar Compra</button>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Contenido Principal del Encabezado -->
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="Imagenes/right.png.jpg" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Estrena las mejores prendas</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Ofertas Especiales -->
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="Imagenes/f1.png.jpg" alt="Producto en oferta">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="Imagenes/f2.png.png" alt="Producto en oferta">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="Imagenes/f3.png.jpg" alt="Producto en oferta">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 3</h3>
+                <a href="#" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="Imagenes/1.png.png" alt="Producto 1">
+                <div class="product-txt">
+                    <h3>Producto A</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al 
+                        carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Imagenes/2.png.png" alt="Producto 2">
+                <div class="product-txt">
+                    <h3>Producto B</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$250</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al 
+                        carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Imagenes/3.png.png" alt="Producto 3">
+                <div class="product-txt">
+                    <h3>Producto C</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$300</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al 
+                        carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Imagenes/4.png.png" alt="Producto 4">
+                <div class="product-txt">
+                    <h3>Producto D</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$400</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al 
+                        carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Imagenes/5.png.jpg" alt="Producto 5">
+                <div class="product-txt">
+                    <h3>Producto E</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al 
+                        carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Imagenes/6.png.jpg" alt="Producto 6">
+                <div class="product-txt">
+                    <h3>Producto F</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$600</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al 
+                        carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Iconos de Ventaja -->
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="Imagenes/i1.svg.jpg" alt="Icono 1">
+            </div>
+            <div class="icon-txt">
+                <h3>Pasión y Orgullo</h3>
+                <p>Colores que Inspiran.</p>
+            </div>
+        </div>
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="Imagenes/i2.svg.jpg" alt="Icono 2">
+            </div>
+            <div class="icon-txt">
+                <h3>Colores que Inspiran</h3>
+                <p>El futuro del fútbol empieza aquí.</p>
+            </div>
+        </div>
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="Imagenes/i3.svg.jpg" alt="Icono 3">
+            </div>
+            <div class="icon-txt">
+                <h3>Siempre Leales</h3>
+                <p>Estilo y pasión en cada prenda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Entradas de Blog -->
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="Imagenes/b1.jpg.png" alt="Blog 1">
+            <h3>Blog 1</h3>
+            <p>La comodidad y el estilo se unen para crear momentos especiales.</p>
+        </div>
+        <div class="blog-1">
+            <img src="Imagenes/b2.jpg.png" alt="Blog 2">
+            <h3>Blog 2</h3>
+            <p>Al vestir los colores que representan nuestra pasión, llevamos en el pecho
+                 algo más que una simple prenda.</p>
+        </div>
+        <div class="blog-1">
+            <img src="Imagenes/b3.jpg.png" alt="Blog 3">
+            <h3>Blog 3</h3>
+            <p>Detrás de cada camiseta, más allá de los colores y el número, 
+                se encuentra la pasión que mueve multitudes.</p>
+        </div>
+    </section>
+
+    <!-- Formulario de Pago -->
+    <div id="formulario-pago" style="display: none;">
+        <h2>Formulario de Pago</h2>
+        <form id="pago-form">
+            <label for="nombre-tarjeta">Nombre en la Tarjeta:</label>
+<input type="text" id="nombre-tarjeta" name="nombre-tarjeta" required>
+
+        <label for="numero-tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="numero-tarjeta" name="numero-tarjeta" required>
+
+        <label for="fecha-expiracion">Fecha de Expiración:</label>
+        <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" name="cvv" maxlength="3" required>
+    
+            <div class="botones">
+                <button id="pagar-ahora">Pagar Ahora</button>
+                <button type="button" id="cerrar-formulario">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
